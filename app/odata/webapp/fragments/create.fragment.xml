@@ -1,0 +1,100 @@
+<core:FragmentDefinition
+    xmlns:core="sap.ui.core"
+    xmlns:form="sap.ui.layout.form"
+    xmlns="sap.m"
+>
+    <Dialog
+        id="idCreateDialog"
+        resizable="true"
+        draggable="true"
+        contentWidth="30%"
+        title="Creating Data"
+    >
+        <beginButton>
+            <Button
+                id="idCreateItems"
+                text="Create"
+                press="onCreate"
+                type="Success"
+            />
+        </beginButton>
+        <endButton>
+            <Button
+                id="idCancelButton"
+                text="Cancel"
+                press="onCancel"
+                type="Negative"
+            />
+        </endButton>
+        <content>
+            <form:SimpleForm
+                id="idHUDetailsForm"
+                editable="true"
+                layout="ResponsiveGridLayout"
+                labelSpanXL="3"
+                labelSpanL="3"
+                labelSpanM="3"
+                labelSpanS="12"
+                adjustLabelSpan="false"
+                emptySpanXL="4"
+                emptySpanL="4"
+                emptySpanM="4"
+                emptySpanS="0"
+                columnsXL="1"
+                columnsL="1"
+                columnsM="1"
+                singleContainerFullSize="false"
+            >
+                <Label
+                    id="idHUnumber"
+                    text="HU Number"
+                />
+                <Input
+                    id="idHUnumberInput"
+                    value="{}"
+                />
+                <Label
+                    id="idScannerIdLabel12" 
+                    text="Scanner Id"
+                />
+                <Input
+                    id="idScannerIdInput12"
+                    value="{}"
+                />
+                <Label
+                    id="idTransferLocationUpdateLabel12"
+                    text="Transfer Location Update"
+                />
+                <Input
+                    id="idTransferLocationUpdatenput12"
+                    value="{}"
+                />
+                <Label
+                    id="idExpectedWeight12"
+                    text="Expected Weight"
+                />
+                <Input
+                    id="idExpectedWeightt12"
+                    value="{}"
+                />
+                <Label
+                    id="idMeasuredWeightl12" 
+                    text="Measured Weight"
+                />
+                <Input
+                    id="idMeasuredWeightInput12"
+                    value="{}"
+                />
+                <Label
+                    id="idDiversionReasonLabel12"
+                    text="Diversion Reason"
+                />
+                <Input
+                    id="idDiversionReasonInput12"
+                    value="{}"
+                />
+
+            </form:SimpleForm>
+        </content>
+    </Dialog>
+</core:FragmentDefinition>

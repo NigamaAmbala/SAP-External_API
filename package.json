@@ -1,0 +1,32 @@
+{
+  "name": "Sap-External-API",
+  "version": "1.0.0",
+  "description": "A simple CAP project.",
+  "repository": "<Add your repository here>",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@sap-cloud-sdk/http-client": "^3.16.0",
+    "@sap-cloud-sdk/resilience": "^3.16.0",
+    "@sap/cds": "^7",
+    "express": "^4"
+  },
+  "devDependencies": {
+    "@cap-js/sqlite": "^1",
+    "@sap/eslint-plugin-cds": "^3",
+    "@sap/ux-specification": "^1.120.14",
+    "eslint": "^9"
+  },
+  "scripts": {
+    "start": "cds-serve",
+    "watch-odata": "cds watch --open odata/webapp/index.html?sap-ui-xx-viewCache=false"
+  },
+  "cds": {
+    "requires": {
+      "gw_client_data_13E457B793C61EEF91840F1052ED1AB5": {
+        "kind": "odata-v2",
+        "model": "srv/external/gw_client_data_13E457B793C61EEF91840F1052ED1AB5"
+      }
+    }
+  }
+}

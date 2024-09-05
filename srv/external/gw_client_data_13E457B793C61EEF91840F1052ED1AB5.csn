@@ -1,0 +1,75 @@
+{
+ "meta": {
+  "creator": "cds-dk 7.9.6"
+ },
+ "$version": "2.0",
+ "definitions": {
+  "gw_client_data_13E457B793C61EEF91840F1052ED1AB5": {
+   "kind": "service",
+   "@cds.external": true,
+   "@m.IsDefaultEntityContainer": "true",
+   "@sap.supported.formats": "atom json xlsx"
+  },
+  "gw_client_data_13E457B793C61EEF91840F1052ED1AB5.ZTOTECNFWCSTOSAPSet": {
+   "kind": "entity",
+   "@cds.external": true,
+   "@cds.persistence.skip": true,
+   "@sap.creatable": "false",
+   "@sap.updatable": "false",
+   "@sap.deletable": "false",
+   "@sap.pageable": "false",
+   "@sap.addressable": "false",
+   "@sap.content.version": "1",
+   "elements": {
+    "HUNumber": {
+     "key": true,
+     "type": "cds.String",
+     "length": 100,
+     "@sap.unicode": "false",
+     "@sap.label": "HU ID",
+     "notNull": true
+    },
+    "Scanner_Id": {
+     "type": "cds.LargeString",
+     "@sap.unicode": "false",
+     "@sap.label": "SCANNER_ID"
+    },
+    "Transfer_Location_Update": {
+     "type": "cds.LargeString",
+     "@sap.unicode": "false",
+     "@sap.label": "TRANSFER_LOCATION_UPDATE"
+    },
+    "Expected_Weight": {
+     "type": "cds.LargeString",
+     "@sap.unicode": "false",
+     "@sap.label": "EXPECTED_WEIGHT"
+    },
+    "Measured_Weight": {
+     "type": "cds.LargeString",
+     "@sap.unicode": "false",
+     "@sap.label": "MEASURED_WEIGHT"
+    },
+    "Diversion_Reason": {
+     "type": "cds.LargeString",
+     "@sap.unicode": "false",
+     "@sap.label": "DIVERSION_REASON"
+    },
+    "error_code": {
+     "type": "cds.LargeString",
+     "@sap.unicode": "false",
+     "@sap.label": "Error Code"
+    },
+    "message_text": {
+     "type": "cds.LargeString",
+     "@sap.unicode": "false",
+     "@sap.label": "Message Test"
+    },
+    "transaction_id": {
+     "type": "cds.LargeString",
+     "@sap.unicode": "false",
+     "@sap.label": "WCS UUID"
+    }
+   }
+  }
+ }
+}

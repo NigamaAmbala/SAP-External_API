@@ -1,0 +1,15 @@
+GET http://localhost:4004/odata/v4/external/ZTOTECNFWCSTOSAPSet HTTP/1.1
+
+###Creating Data
+
+POST http://localhost:4004/odata/v4/external/ZTOTECNFWCSTOSAPSet HTTP/1.1
+Content-Type: application/json
+
+{
+    "HUNumber": "T015",
+    "Scanner_Id": "SCN1",
+    "Transfer_Location_Update": "DROP",
+    "Expected_Weight": "10",
+    "Measured_Weight": "9.8",
+    "Diversion_Reason": "PTWY"
+}

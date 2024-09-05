@@ -1,0 +1,111 @@
+<mvc:View controllerName="com.app.odata.controller.home"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <Table
+                id="idTable"
+                items="{/ZTOTECNFWCSTOSAPSet}"
+                mode="SingleSelectLeft"
+            >
+                <headerToolbar>
+                    <OverflowToolbar id="_IDGenOverflowToolbar1">
+                        <ToolbarSpacer id="_IDGenToolbarSpacer1" />
+                        <Button
+                            id="_IDGenButton1"
+                            type="Negative"
+                            icon="sap-icon://delete"
+                            text="Delete"
+                            press="onDelete"
+                        />
+                        <Button
+                            id="_IDGenButton2"
+                            type="Success"
+                            icon="sap-icon://add"
+                            text="Create"
+                            press="onAdd"
+                        />
+ 
+                        <Button
+                            id="_IDGenButton3"
+                            type="Attention"
+                            icon="sap-icon://edit"
+                            text="Edit"
+                            press="onSorter"
+                        />
+                    </OverflowToolbar>
+                </headerToolbar>
+ 
+                <columns>
+                    <Column id="idforcolumn">
+                        <Title
+                            id="idid"
+                            text="HUNumber"
+                        />
+                    </Column>
+                    <Column id="NameforColumn">
+                        <Title
+                            id="_IDGenTitle1"
+                            text="Scanner_Id"
+                        />
+                    </Column>
+                    <Column id="idkdkd">
+                        <Title
+                            id="_IDGenTitle2"
+                            text="Transfer_Location_Update"
+                        />
+                    </Column>
+                    <Column id="titleforcolumn">
+                        <Title
+                            id="title"
+                            text="Measured_Weight"
+                        />
+                    </Column>
+                    <Column id="summaryforcolumn">
+                        <Title
+                            id="summary"
+                            text="Expected_Weight"
+                        />
+                    </Column>
+                    <Column
+                        id="Measured_Weight"
+                       
+                    >
+                        <Title
+                            id="idDiscontinuedDate"
+                            text="Diversion_Reason"
+                        />
+                    </Column>
+                </columns>
+                <items>
+                    <ColumnListItem id="idcollist">
+                        <cells>
+                            <Text
+                                id="idval"
+                                text="{HUNumber}"
+                            />
+                            <Text
+                                id="_IDGenText1"
+                                text="{Scanner_Id}"
+                            />
+                            <Text
+                                id="idkkkds"
+                                text="{Transfer_Location_Update}"
+                            />
+                            <Text
+                                id="titleval"
+                                text="{Expected_Weight}"
+                            />
+                            <Text
+                                id="summaryval"
+                                text="{Measured_Weight}"
+                            />
+                            <Text
+                                id="Discounval"
+                                text="{Diversion_Reason}"
+                            />
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+    </Page>
+</mvc:View>
